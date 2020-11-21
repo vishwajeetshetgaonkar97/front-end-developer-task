@@ -1,0 +1,397 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: montserrat;
+  text-decoration: none;
+  list-style: none;
+}
+/* header*/
+header {
+  height: 95vh;
+}
+
+/* navbar list*/
+nav {
+  height: 10vh;
+  width: 100%;
+}
+nav h4 {
+  color: #020e1d;
+  font-size: 3vh;
+  padding-left: 5vh;
+  padding-top: 5vh;
+}
+nav h4 span {
+  color: #0099ff;
+}
+nav ul {
+  float: right;
+  margin-right: 5vh;
+  margin-top: -4vh;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 2vh;
+}
+
+li a {
+  padding: 2vh 2vh;
+  color: #020e1d;
+}
+
+li a:hover {
+  background: #0099ffe0;
+  border-radius: 5px;
+  color: white;
+}
+
+/* toggle button on smaller screens*/
+.checkbtn {
+  color: white;
+  float: right;
+  margin-right: 4vh;
+  margin-top: -8vh;
+  cursor: pointer;
+  display: none; /* nothing is displayed*/
+}
+.checkbtn img {
+  height: 10vh;
+}
+#check {
+  display: none;
+}
+/* heading or company name */
+h1 {
+  text-align: right;
+  font-size: 15vh;
+  margin-top: 10vh;
+  margin-right: 20%;
+  color: #020e1d;
+}
+h5 {
+  text-align: right;
+  font-size: 3vh;
+  margin-right: 15%;
+  color: #8f9296;
+}
+.knowmore-buttom {
+  padding: 2vh;
+  width: fit-content;
+  width: -moz-fit-content; /* for firefox browser*/
+  margin-top: 2vh;
+  margin-left: 75%;
+  color: white;
+  background-color: #0099ff;
+  border-radius: 2px;
+  cursor: pointer;
+}
+.knowmore-buttom:hover {
+  background-color: #020e1dee;
+  border-radius: 5px;
+}
+
+/* svg used for design*/
+header svg {
+  margin-top: -5vh;
+}
+.svg1 {
+  margin-top: -95vh;
+}
+
+/* Body content */
+.body-content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 25vh;
+  padding-bottom: 25vh;
+  background: url(team.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Box in Body content */
+.body-content-box {
+  height: fit-content;
+  width: 60%;
+  background-color: rgb(0, 0, 0, 0.8);
+  border-radius: 15px 15px 15px 15px;
+  padding-bottom: 5vh;
+}
+/* form heading */
+.body-content-box h2 {
+  display: flex;
+  background-color: rgb(0, 0, 0, 0.6);
+  height: 10vh;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
+  padding: 10px 0px 10px 0px;
+  border-radius: 15px 15px 0px 0px;
+}
+
+form {
+  padding: 2vh;
+}
+/* row in form with 2 fields */
+.box-row {
+  display: flex;
+  padding: 2vh 0vh 2vh 0vh;
+}
+.box-col-1,
+.box-col-2 {
+  width: 50%;
+}
+.box-col-1 input,
+.box-col-2 input {
+  margin: 10px 0;
+  background: transparent;
+  border: 0px;
+  border-bottom: 2px solid #c5ecfd;
+  padding: 10px;
+  color: #c5ecfd;
+  width: 90%;
+}
+::placeholder {
+  color: #c5ecfd;
+}
+
+/* to avoid field border when in focus*/
+input:focus {
+  outline: none;
+}
+/* form submit button*/
+.btn {
+  margin-top: 2vh;
+  background-color: #0099ff;
+  border-radius: 5px;
+  padding: 2vh;
+  text-align: center;
+  cursor: pointer;
+  color: #ffffff;
+}
+.btn:hover {
+  background-color:#c5ecfd;
+  color: #020e1d;
+}
+
+/*footer*/
+footer {
+  background-color: #020e1d;
+  box-sizing: border-box;
+  width: 100%;
+  padding: 10vh 5vh 5vh 5vh;
+}
+
+footer .footer-left,
+footer .footer-center,
+footer .footer-right {
+  display: inline-block;
+  vertical-align: top;
+}
+
+/* Footer left */
+
+footer .footer-left {
+  width: 30%;
+}
+
+footer h3 {
+  color: #ffffff;
+  margin: 0;
+}
+
+/* The company logo */
+
+footer h3 span {
+  color: #0099ff;
+}
+
+/* Footer links */
+
+.footer-links {
+  color: #ffffff;
+  margin: 2vh 0 1vh 0;
+}
+
+.footer-links a {
+  display: inline-block;
+  margin-top: 3vh;
+  color: white;
+}
+
+.footer-company-copyrights {
+  padding-top: 4vh;
+  color: #8f9296;
+  font-size: 2.2vh;
+  font-weight: normal;
+}
+
+/* Footer Center */
+
+.footer-center {
+  width: 35%;
+}
+.footer-center h3 {
+  padding-bottom: 2vh;
+}
+
+.footer-center p {
+  display: inline-block;
+  width: 90%;
+  color: #ffffff;
+  font-size: 2.5vh;
+}
+
+.footer-center .contact {
+  padding-top: 1vh;
+}
+
+.footer-center p a {
+  color: #0099ff;
+  text-decoration: none;
+}
+
+/* Footer Right */
+
+.footer-right {
+  width: 30%;
+}
+
+.footer-company-about {
+  color: #92999f;
+  font-size: 2.2vh;
+  margin-top: 2vh;
+}
+.footer-icons {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 3vh;
+}
+.footer-icons a {
+  text-decoration: none;
+  cursor: pointer;
+}
+.footer-icons a img {
+  height: 5vh;
+  width: 5vh;
+}
+.footer-icons a img:hover {
+  opacity: 0.7;
+}
+
+@media only screen and (max-width: 768px) {
+  header {
+    height: 95%;
+  }
+  nav h4 {
+    color: #ffffff;
+  }
+  nav h4 span {
+    color: #020e1d;
+  }
+  nav{
+    position: fixed;
+    background-color: #0099ff;
+    margin-top: -10vh;
+  }
+  /* for navbar list*/
+  nav ul {
+    position: fixed;
+    width: 100%;
+    height: 30vh;
+    background: #020e1d;
+    top: 14vh;
+    left: -100%;
+    text-align: center;
+    transition: all 0.5s;
+  }
+
+  nav ul li {
+    display: block;
+    padding: 3vh 0vh;
+  }
+
+  li a {
+    padding: 1vh 1vh;
+    color: #ffffff;
+  }
+
+  li a:hover {
+    background: none;
+    color: #0082e6;
+  }
+  .checkbtn {
+    display: block;
+  }
+  /*to toggle*/
+  #check:checked ~ ul {
+    left: 0;
+  }
+  header svg {
+    margin-top: -0vh;
+  }
+  .svg1 {
+    margin-top: -90vh;
+  }
+  /*header adjustment for small devices*/
+
+  h1 {
+    padding-top: 3vh;
+    font-size: 10vh;
+    padding-left: 1.5vh;
+  }
+  h5 {
+    font-size: 2.5vh;
+    padding-left: 1vh;
+  }
+  .knowmore-buttom {
+    padding: 1.5vh;
+    margin-left: 55%;
+  }
+
+  .box-row {
+    display: inline;
+    padding: 2vh 0vh 2vh 0vh;
+  }
+
+  .box-col-1,
+  .box-col-2 {
+    width: 100%;
+  }
+
+  /* Body content */
+  .body-content {
+    padding: 10vh 0;
+  }
+
+  /*footer*/
+  footer {
+    display: block;
+    width: 100%;
+  }
+  /* Footer left,center,right */
+
+  footer .footer-left,
+  .footer-center,
+  .footer-right {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 5vh;
+  }
+
+  /* Footer right icons */
+  .footer-icons {
+    margin-top: 1vh;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-icons a img {
+    padding: 0 3vh 0 3vh;
+  }
+}
+
+
+  
